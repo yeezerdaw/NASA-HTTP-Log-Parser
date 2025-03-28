@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Analysis</title>
+</head>
+<body>
+    <h1>Welcome to the Log Analysis App!</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">Choose a log file:</label>
+        <input type="file" name="file" id="file" accept=".txt, .log, .csv" required>
+        <button type="submit">Upload File</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Analysis Results</title>
+</head>
+<body>
+    <h1>Log Analysis Results</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>IP Address</th>
+                <th>URL</th>
+                <th>Status Code</th>
+                <th>Error Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>{{ result.ip }}</td>
+                <td>{{ result.url }}</td>
+                <td>{{ result.status }}</td>
+                <td>{{ result.error_type }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
